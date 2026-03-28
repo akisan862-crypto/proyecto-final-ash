@@ -179,3 +179,143 @@ section {
     flex: 1.5;
     padding-left: 3rem;
 }
+.portfolio {
+    text-align: center;
+}
+
+.gallery-mosaic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(46, 59, 109, 0.85); 
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 10;
+    transition: all 0.4s ease; 
+}
+
+.sticker {
+    position: absolute;
+    width: 65px; 
+    z-index: 20; 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.sticker-top-left { top: -25px; left: -25px; }
+.sticker-top-right { top: -25px; right: -25px; }
+.sticker-bottom-left { bottom: -25px; left: -25px; }
+.sticker-bottom-right { bottom: -25px; right: -25px; }
+
+.contact {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 4rem 2rem;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; 
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #2e3b6d;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    border-color: #ff5e91;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+footer {
+    background-color: #333;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+footer a {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: scale(1.2) translateY(-5px);
+}
+
+footer img {
+    height: 30px;
+    filter: brightness(0) invert(1); 
+}
