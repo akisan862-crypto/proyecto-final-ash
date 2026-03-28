@@ -1,129 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-</head>
+    <title>ASH PORTAFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script> </head>
 <body>
-    <header>
-<!-- Parte superior  -->
-        <div>
-            <img src="src/logo.png" alt="Logo" style="width: 5%;">
-            <span>ASH PORTAFOLIO</span>
+   <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="src/logo.png" alt="Logo">
+                <span>ASH PORTAFOLIO</span>
+            </div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#resume">Resumen</a></li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get in touch</a>
+            </nav>
         </div>
-<!-- Menu de opciones -->
-        <nav>
-            <ul>
-                <li><a href="About">About me</a></li>
-                <li><a href="Work">Work</a></li>
-                <li><a href="Resumen">Resumen</a></li>
-            </ul>
-            <a href="Contacto">Get in touch</a>
-        </nav>
-
     </header>
-<!-- Seccion principal -->
+
     <main>
-        <section>
-
-            <div>
-                <h1>PORTAFOLIO</h1>
-            </div>
-
-            <div>
-
-                <article>
-                <img src="src/img 1.png" alt="Gato" style="width: 15%;">
-                <h3>Creativity</h3>
-                </article>
-
-                <article>
-                 <img src="src/img 2.png" alt="Draculaura" style="width: 15%;">
-                <h3>Inspiration</h3>
-                </article>
-
-                <article>
-                 <img src="src/imgb 3.png" alt="Chica" style="width: 15%;">
-                <h3>Ambition</h3>
-                </article>
-
-            </div>
-
-            <div>
-                 <h2>Hi,ist me</h2>
-                    <p>"Diseño digital que conecta y comunica. Aquí te presento una selección de mis proyectos más recientes, 
-                    donde transformo conceptos creativos en soluciones visuales funcionales.
-                    ¿Tienes un proyecto en mente? Hagámoslo realidad."</p>
-                <div>
-                        <a href="">Reservacion</a>
+        <section id="about" class="hero">
+            <div class="hero-content">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-blob"></div>
+                    <img src="src/ash-img.jpeg" alt="Ash" class="hero-image">
+                    <span class="decorative-star star-1">★</span>
+                    <span class="decorative-star star-2">✦</span>
+                </div>
+                <div class="hero-text">
+                    <h1>¡Hola! <span class="sub-hola">Hi, it's me</span></h1>
+                    <p>"Diseño digital que conecta y comunica. Aquí te presento una selección de mis proyectos más recientes, donde transformo conceptos creativos en soluciones visuales funcionales. ¿Tienes un proyecto en mente? Hagámoslo realidad."</p>
+                    <a href="#contact" class="btn-primary">Reservación</a>
                 </div>
             </div>
-
-
-
         </section>
-        <section>
 
-            <div>
+       <section id="work" class="portfolio">
+            <h2>PORTAFOLIO</h2>
+            <div class="gallery-mosaic">
+                
+                <article class="gallery-item item-1">
+                    <img src="src/img 1.png" alt="Gato" class="main-img">
+                    <h3 class="gallery-title">Creativity</h3>
+                    
+                    <img src="https://www.misskatecuttables.com/uploads/shopping_cart/9832/large_cherries67.png" alt="Sticker" class="sticker sticker-top-left">
+                    <img src="https://images.vexels.com/media/users/3/278665/isolated/preview/10b1cc8c5e415b1a4ea70b5b758b96ea-icono-de-fresa-de-san-valentin.png" alt="Sticker" class="sticker sticker-bottom-right">
+                </article>
+
+                <article class="gallery-item item-2">
+                    <img src="src/img 2.png" alt="Draculaura" class="main-img">
+                    <h3 class="gallery-title">Inspiration</h3>
+                    
+                    <img src="https://images.vexels.com/media/users/3/261545/isolated/preview/0c1e0c11a29ed825bb3410ed9a93655c-estrella-plana-amarilla-brillante.png" alt="Sticker" class="sticker sticker-top-right">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/011/850/795/small/cute-sticker-decoration-atl-png.png" alt="Sticker" class="sticker sticker-bottom-left">
+                </article>
+
+                <article class="gallery-item item-3">
+                    <img src="src/imgb 3.png" alt="Chica" class="main-img">
+                    <h3 class="gallery-title">Ambition</h3>
+                    
+                    <img src="https://cdn-icons-png.flaticon.com/256/7592/7592486.png" alt="Sticker" class="sticker sticker-center">
+                </article>
+
+            </div>
+
+        <section id="contact" class="contact">
+            <div class="contact-header">
                 <h2>Atención Personalizada</h2>
                 <p>¿Lista/o para llevar tu idea al siguiente nivel? Ya sea diseño, desarrollo web o una solución que integre ambos mundos, cuéntame sobre tu proyecto.</p>
             </div>
-
-            <form action="">
-             
-                <div>
-                    <label for="Nombre">Tu nombre:</label>
-                    <input type="text" id="Nombre" placeholder="Tu nombre">
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="Correo">Tu correo electronico</label>
-                    <input type="email" id="Correo" placeholder="hola@gmail.com">
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="Telefono">Tu numero de telfono</label>
-                    <input type="number" id="Telefono">
-                </div>
-
-                <br>    
-
-                <div>
-                    <label for="Servicio">¿En qué área necesitas magia?</label>
-                    <select id="Servicio">
-                        <option value="diseno">Solo Diseño Digital / UI</option>
-                        <option value="desarrollo">Solo Desarrollo / Programación</option>
-                        <option value="integral">Proyecto Integral (Diseño + Código)</option>
-                        <option value="asesoria">Asesoría / Networking</option>
-                    </select>
-                </div>
-
-                <br>
-
-                <div>
-                    <label for="Mensaje">Cuentame los detalles de tu idea</label>
-                    <br>
-                    <textarea name="mesaje" id="Mensaje" rows="4" placeholder="Escribe aqui tu mensaje...." required></textarea>
-                </div>
-
-                <br>
-
-                <div>
-                    <button type="submit">Enviar Solicitud</button>
-                </div>
-            </form>
+            <div class="contact-container">
+                <form action="">
+                    <div class="form-group">
+                        <label for="Nombre">Tu nombre:</label>
+                        <input type="text" id="Nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Correo">Tu correo electronico</label>
+                        <input type="email" id="Correo" placeholder="hola@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Telefono">Tu numero de telfono</label>
+                        <input type="tel" id="Telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="Servicio">¿En qué área necesitas magia?</label>
+                        <select id="Servicio">
+                            <option value="diseno">Solo Diseño Digital / UI</option>
+                            <option value="desarrollo">Solo Desarrollo / Programación</option>
+                            <option value="integral">Proyecto Integral (Diseño + Código)</option>
+                            <option value="asesoria">Asesoría / Networking</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Mensaje">Cuentame los detalles de tu idea</label>
+                        <textarea name="mesaje" id="Mensaje" rows="4" placeholder="Escribe aqui tu mensaje...." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Enviar Solicitud</button>
+                    </div>
+                </form>
+               
+            </div>
         </section>
-
     </main>
-    <Footer>
-        <a href="#"><img src="src/logotipo-de-instagram.png" alt="" width="7%"></a>
-        <a href="#"><img src="src/signo-de-twitter.png" alt="" width="7%"></a>
-        <a href="3"><img src="src/facebook.png" alt="" width="7%"></a>
-    </Footer>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#"><img src="src/logotipo-de-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="src/signo-de-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="src/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
 </body>
 </html>
